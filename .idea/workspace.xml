@@ -5,6 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36134b33-756d-4aa7-b6e8-f883a3e90af6" name="Changes" comment="Everything">
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/components/SaveIndicator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/listeners/SavedDocumentListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/SavedManager.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/models/Style.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.e4j" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
@@ -31,12 +36,9 @@
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/models/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/models/Settings.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/project-info/Worklist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project-info/Worklist.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/Editor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/UIUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/UIUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/NewFileMenuItemListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/NewFileMenuItemListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/OpenFileMenuItemListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/OpenFileMenuItemListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/SaveFileMenuItemListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/SaveFileMenuItemListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/styles/DarkStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/styles/DarkStyle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/styles/LightStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/styles/LightStyle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/managers/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/managers/FileManager.java" afterDir="false" />
