@@ -1,22 +1,14 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
-- Move to a new Build System (done, Gradle)
-- Abstract GUI building into a new class (done, Editor.java)
-- Saving and Reloading User Settings (fixed, Pulled RSTA source and made necessary changes)
-
-- Next Work Items will be added after Maintenance Mode
-
-- Pull RSTA source and make Theme.java, SyntaxStyle.java and Style.java serializable
-(I didn't back that up after moving from Mint to Zorin), then figure out how to integrate
-it with E4J. CI in a seperate repo? Stick sources directly into E4J sources?
+- Automatic Syntax Highlighter detection by file extension, e.g SYNTAX_STYLE_RUBY for .rb files
+- Saved / Not Saved indicator (title bar?)
+- SettingsDialog gui polishing, (it looks really unfinished)
+- Restore to defaults button in SettingsDialog
+- Editor wide font application
 
 Bugs:
-- Font saving is a little buggy, apply needs to be pressed twice, first time RSTA goes to it's default font, second
-time RSTA applies selected font
 
 Notes:
-- The GUI Architecture is getting kind of weird, look for new ones?
-- Next Weekend Oct 16-17 will be maintenance mode, E4J needs a big refactor and
-needs to iron out the bugs
+
 
