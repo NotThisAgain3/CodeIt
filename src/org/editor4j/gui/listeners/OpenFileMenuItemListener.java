@@ -29,6 +29,8 @@ public class OpenFileMenuItemListener implements ActionListener {
             editor.codeEditor.setText(FileManager.openFile(jFileChooser.getSelectedFile().getPath()));
             editor.jFrame.setTitle(UIUtils.formatTitleBar(FileManager.openedFile.getPath()));
 
+            editor.codeEditor.setSyntaxEditingStyle(UIUtils.getSyntaxEditingStyle(UIUtils.getFileExtension(FileManager.openedFile)));
+
         }
 
     }

@@ -7,6 +7,7 @@ import org.editor4j.gui.components.JFontBox;
 import org.editor4j.models.Settings;
 import org.editor4j.gui.styles.DarkStyle;
 import org.editor4j.gui.styles.LightStyle;
+import org.editor4j.models.Style;
 
 import javax.swing.*;
 import java.awt.*;

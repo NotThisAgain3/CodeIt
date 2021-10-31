@@ -6,6 +6,7 @@ public class FileManager {
     public static File openedFile = null;
     private FileManager(){}
 
+    //TODO Avoid opening a new BufferedWriter everytime we save
     public static void saveTextToOpenFile(String text){
         try {
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(openedFile));

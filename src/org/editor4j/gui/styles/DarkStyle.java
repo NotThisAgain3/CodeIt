@@ -1,7 +1,6 @@
 package org.editor4j.gui.styles;
 
-import org.editor4j.gui.Style;
-import org.fife.ui.rsyntaxtextarea.Theme;
+import org.editor4j.models.Style;
 
 import java.awt.*;
 import java.io.IOException;

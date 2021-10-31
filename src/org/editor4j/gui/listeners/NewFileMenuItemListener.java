@@ -30,6 +30,9 @@ import java.io.IOException;
                     FileManager.openedFile = jFileChooser.getSelectedFile();
                     editor.codeEditor.setText(FileManager.openFile(jFileChooser.getSelectedFile().getPath()));
                     editor.jFrame.setTitle(UIUtils.formatTitleBar(FileManager.openedFile.getPath()));
+
+
+                    editor.codeEditor.setSyntaxEditingStyle(UIUtils.getSyntaxEditingStyle(UIUtils.getFileExtension(FileManager.openedFile)));
                 }
                 else {
                     JOptionPane.showMessageDialog(null, "Failed to create file " + jFileChooser.getSelectedFile());

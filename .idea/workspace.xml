@@ -5,13 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="36134b33-756d-4aa7-b6e8-f883a3e90af6" name="Changes" comment="Everything">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/Editor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/SettingsDialog$ReloadSettingsDialogListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/SettingsDialog$ReloadSettingsDialogListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/SettingsDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/SettingsDialog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/Style.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/UIUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/UIUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/listeners/NewFileMenuItemListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/listeners/NewFileMenuItemListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/listeners/OpenFileMenuItemListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/listeners/OpenFileMenuItemListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/listeners/SaveFileMenuItemListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/listeners/SaveFileMenuItemListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/DarkStyle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/DarkStyle.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/LightStyle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/LightStyle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/SettingsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/SettingsManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/models/Settings.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/models/Settings.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/project-info/Worklist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project-info/Worklist.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/editor4j/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/Editor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/UIUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/UIUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/NewFileMenuItemListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/NewFileMenuItemListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/OpenFileMenuItemListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/OpenFileMenuItemListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/SaveFileMenuItemListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/SaveFileMenuItemListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/styles/DarkStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/styles/DarkStyle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/styles/LightStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/styles/LightStyle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/editor4j/managers/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/managers/FileManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/editor4j/models/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/models/Settings.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/org/editor4j/models/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/models/Style.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +108,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File" value="JAVA" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Editor4J-Test" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -87,9 +117,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.editor4j.gui.listeners" />
       <recent name="swingutils" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/project-info/screenshots" />
       <recent name="$PROJECT_DIR$/libs" />
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -304,7 +336,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java</url>
-          <line>44</line>
+          <line>45</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
