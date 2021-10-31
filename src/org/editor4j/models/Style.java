@@ -13,9 +13,6 @@ public class Style implements Serializable {
     public String name;
     public String lookAndFeel;
     public String themePath;
-    //TODO this shouldn't be here, move it to Settings.java
-    public Font font;
-
     @Override
     public String toString() {
         return name;

@@ -39,7 +39,7 @@ public class SettingsManager {
         SwingUtilities.updateComponentTreeUI(editor.jFrame);
 
         try {
-            Theme theme = Theme.load(SettingsManager.class.getResourceAsStream(s.style.themePath), s.style.font);
+            Theme theme = Theme.load(SettingsManager.class.getResourceAsStream(s.style.themePath), s.font);
             theme.apply(editor.codeEditor);
         } catch (IOException e) {
             e.printStackTrace();

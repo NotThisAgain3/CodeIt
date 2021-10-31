@@ -10,7 +10,5 @@ public class DarkStyle extends Style {
         this.name = "Dark";
         this.lookAndFeel = "com.formdev.flatlaf.FlatDarkLaf";
         this.themePath = "/org/fife/ui/rsyntaxtextarea/themes/monokai.xml";
-        this.font = new Font("JetBrains Mono Regular", Font.PLAIN, 20);
-
     }
 }

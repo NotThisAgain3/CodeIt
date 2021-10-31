@@ -10,7 +10,6 @@ public class LightStyle extends Style {
         this.name = "Light";
         this.lookAndFeel = "com.formdev.flatlaf.FlatLightLaf";
         this.themePath = "/org/fife/ui/rsyntaxtextarea/themes/idea.xml";
-        this.font = new Font("JetBrains Mono Regular", Font.PLAIN, 20);
 
     }
 }

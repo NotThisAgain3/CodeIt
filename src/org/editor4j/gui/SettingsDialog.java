@@ -52,8 +52,8 @@ public class SettingsDialog extends JBaseDialog {
     private void setSettings(Settings currentSettings) {
 
         styles.getModel().setSelectedItem(currentSettings.style);
-        fonts.getModel().setSelectedItem(currentSettings.style.font.getFontName());
-        fontSizes.setValue(currentSettings.style.font.getSize());
+        fonts.getModel().setSelectedItem(currentSettings.font.getFontName());
+        fontSizes.setValue(currentSettings.font.getSize());
     }
 
     private JPanel buildStyleOptions() {
@@ -90,7 +90,7 @@ public class SettingsDialog extends JBaseDialog {
         int fontSize = (int) fontSizes.getValue();
         String fontName = (String) fonts.getSelectedItem();
 
-        settings.style.font = new Font(fontName, Font.PLAIN, fontSize);
+        settings.font = new Font(fontName, Font.PLAIN, fontSize);
         return settings;
     }
 
