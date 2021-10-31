@@ -1,13 +1,10 @@
 package org.editor4j;
 
 import org.editor4j.gui.components.JEmptyPanel;
-import org.editor4j.gui.listeners.NewFileMenuItemListener;
-import org.editor4j.gui.listeners.OpenFileMenuItemListener;
-import org.editor4j.gui.listeners.SaveFileMenuItemListener;
-import org.editor4j.gui.listeners.SettingsMenuItemListener;
+import org.editor4j.gui.components.SaveIndicator;
+import org.editor4j.gui.listeners.*;
 import org.editor4j.managers.SettingsManager;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
-import org.fife.ui.rsyntaxtextarea.SyntaxConstants;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
@@ -26,12 +23,12 @@ public class Editor {
     public JMenuItem newFileMenuItem, openFileMenuItem, saveFileMenuItem;
     public JMenu editorMenu;
     public JMenuItem settingsMenuItem;
-
+    public SaveIndicator saveIndicator;
     public void createNewEditor() {
         SettingsManager.applySettings(SettingsManager.currentSettings, this);
-
         codeEditor.setCodeFoldingEnabled(true);
-        codeEditor.setSyntaxEditingStyle(SyntaxConstants.SYNTAX_STYLE_JAVA);
+        codeEditor.getDocument().addDocumentListener(new SavedDocumentListener(this));
+
 
         jMenuBar = new JMenuBar();
         fileMenu = new JMenu("File");
@@ -61,6 +58,9 @@ public class Editor {
 
         jMenuBar.add(fileMenu);
         jMenuBar.add(editorMenu);
+        jMenuBar.add(Box.createHorizontalGlue());
+        saveIndicator = new SaveIndicator();
+        jMenuBar.add(saveIndicator);
 
 
         jFrame.setJMenuBar(jMenuBar);

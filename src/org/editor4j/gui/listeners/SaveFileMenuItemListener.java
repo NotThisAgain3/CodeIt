@@ -2,6 +2,7 @@ package org.editor4j.gui.listeners;
 
 import org.editor4j.Editor;
 import org.editor4j.managers.FileManager;
+import org.editor4j.managers.SavedManager;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,6 +17,10 @@ public class SaveFileMenuItemListener implements ActionListener {
         if(FileManager.openedFile != null){
             String newText = editor.codeEditor.getText();
             FileManager.saveTextToOpenFile(newText);
+
+            SavedManager.saved = true;
+            editor.saveIndicator.setStatus(SavedManager.saved);
+
         }
     }
 }
