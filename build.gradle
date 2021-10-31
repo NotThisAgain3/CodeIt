@@ -17,6 +17,6 @@ sourceSets {
 }
 dependencies {
     implementation 'com.formdev:flatlaf:1.6'
-    implementation(files("libs/rsyntaxtextarea-3.1.4-SNAPSHOT.jar"))
+    implementation 'com.fifesoft:rsyntaxtextarea:3.1.3'
 
 }
