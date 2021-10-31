@@ -1,6 +1,4 @@
-package org.editor4j.gui;
-
-import org.fife.ui.rsyntaxtextarea.Theme;
+package org.editor4j.models;
 
 import java.awt.*;
 import java.io.Serializable;
