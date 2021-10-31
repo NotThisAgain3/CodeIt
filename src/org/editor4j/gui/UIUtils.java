@@ -1,13 +1,11 @@
 package org.editor4j.gui;
 
 
-import org.editor4j.models.Settings;
-import org.fife.ui.rsyntaxtextarea.Theme;
-
 import javax.swing.*;
 import java.awt.*;
-import java.io.IOException;
+import java.io.File;
 
+import static org.fife.ui.rsyntaxtextarea.SyntaxConstants.*;
 public class UIUtils {
     public static final int osMenuMask = Toolkit.getDefaultToolkit().getMenuShortcutKeyMaskEx();
 
@@ -27,5 +25,41 @@ public class UIUtils {
     public static String formatTitleBar(String text){
         return "Editor4J - " + text;
     }
+    public static String getFileExtension(File f){
+        String[] tokens = f.getName().split("\\.");
+        return tokens[tokens.length - 1];
+    }
+    public static String getSyntaxEditingStyle(String extension){
 
+        switch (extension){
+            case "java":
+                return SYNTAX_STYLE_JAVA;
+            case "py":
+                return SYNTAX_STYLE_PYTHON;
+            case "c":
+                return SYNTAX_STYLE_C;
+            case "cpp":
+                return SYNTAX_STYLE_CPLUSPLUS;
+            case "rb":
+                return SYNTAX_STYLE_RUBY;
+            case "as":
+                return SYNTAX_STYLE_ACTIONSCRIPT;
+            case "css":
+                return SYNTAX_STYLE_CSS;
+            case "html":
+                return SYNTAX_STYLE_HTML;
+            case "js":
+                return SYNTAX_STYLE_JAVASCRIPT;
+            case "kt":
+                return SYNTAX_STYLE_KOTLIN;
+            case "md":
+                return SYNTAX_STYLE_MARKDOWN;
+            case "sh":
+                return SYNTAX_STYLE_UNIX_SHELL;
+            case "bat":
+                return SYNTAX_STYLE_WINDOWS_BATCH;
+            default:
+                return SYNTAX_STYLE_NONE;
+        }
+    }
 }
