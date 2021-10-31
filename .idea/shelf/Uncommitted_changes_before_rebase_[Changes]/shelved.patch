@@ -1,0 +1,221 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AutoImportSettings\">\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"36134b33-756d-4aa7-b6e8-f883a3e90af6\" name=\"Changes\" comment=\"User settings are saved and loaded in again on startup!\">\n      <change afterPath=\"$PROJECT_DIR$/.idea/libraries/rsyntaxtextarea_3_1_4_SNAPSHOT.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/.idea/uiDesigner.xml\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/BaseDialog.java\" afterDir=\"false\" />\n      <change afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/styles/SystemStyle.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/checksums/checksums.lock\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/checksums/checksums.lock\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/misc.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/misc.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/workspace.xml\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build.gradle\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build.gradle\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/Editor.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/Editor.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/Main.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/Main.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JEditor.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JField.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JField.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JVoid.class\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/SettingsDialog.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/SettingsDialog.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/NewFileListener.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/NewFileListener.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/OpenFileListener.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/OpenFileListener.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SaveFileListener.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SaveFileListener.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SettingsListener.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SettingsListener.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/SettingsManager.class\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/SettingsManager.class\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/project-info/Worklist.txt\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/project-info/Worklist.txt\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/project-info/font-applying.bug\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/project-info/font-applying.bug\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/settings.e4j\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/Editor.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/Editor.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/Main.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/Main.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/JEditor.java\" beforeDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/JField.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/JField.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/JVoid.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/JEmptyPanel.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/Style.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/Style.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/events/NewFileListener.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/events/NewFileListener.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/events/OpenFileListener.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/events/OpenFileListener.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/events/SaveFileListener.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/events/SaveFileListener.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/gui/events/SettingsListener.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/gui/events/SettingsListener.java\" afterDir=\"false\" />\n      <change beforePath=\"$PROJECT_DIR$/src/org/editor4j/managers/SettingsManager.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/org/editor4j/managers/SettingsManager.java\" afterDir=\"false\" />\n    </list>\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <task path=\"$PROJECT_DIR$\">\n          <activation />\n        </task>\n        <projects_view>\n          <tree_state>\n            <expand>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"Editor\" type=\"f1a62948:ProjectNode\" />\n              </path>\n              <path>\n                <item name=\"\" type=\"6a2764b6:ExternalProjectsStructure$RootNode\" />\n                <item name=\"Editor\" type=\"f1a62948:ProjectNode\" />\n                <item name=\"Run Configurations\" type=\"7b0102dc:RunConfigurationsNode\" />\n              </path>\n            </expand>\n            <select />\n          </tree_state>\n        </projects_view>\n      </state>\n    </system>\n  </component>\n  <component name=\"FileTemplateManagerImpl\">\n    <option name=\"RECENT_TEMPLATES\">\n      <list>\n        <option value=\"Class\" />\n      </list>\n    </option>\n  </component>\n  <component name=\"Git.Settings\">\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\n  </component>\n  <component name=\"GitSEFilterConfiguration\">\n    <file-type-list>\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\n      <filtered-out-file-type name=\"TAG\" />\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\n    </file-type-list>\n  </component>\n  <component name=\"ProjectId\" id=\"1xJjaVGIopFO4z0wEfKPxHyltSt\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"ASKED_ADD_EXTERNAL_FILES\" value=\"true\" />\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"SHARE_PROJECT_CONFIGURATION_FILES\" value=\"true\" />\n    <property name=\"com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File\" value=\"JAVA\" />\n    <property name=\"dart.analysis.tool.window.visible\" value=\"false\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/libs/rsyntaxtextarea-3.1.4-SNAPSHOT.jar\" />\n    <property name=\"project.structure.last.edited\" value=\"Libraries\" />\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\n    <property name=\"project.structure.side.proportion\" value=\"0.2\" />\n    <property name=\"run.code.analysis.last.selected.profile\" value=\"pProject Default\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"reference.settingsdialog.IDE.editor.colors\" />\n  </component>\n  <component name=\"RecentsManager\">\n    <key name=\"CreateClassDialog.RecentsKey\">\n      <recent name=\"swingutils\" />\n    </key>\n    <key name=\"CopyFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$/libs\" />\n      <recent name=\"$PROJECT_DIR$\" />\n    </key>\n    <key name=\"MoveFile.RECENT_KEYS\">\n      <recent name=\"$PROJECT_DIR$\" />\n    </key>\n    <key name=\"CopyClassDialog.RECENTS_KEY\">\n      <recent name=\"org.editor4j.gui\" />\n      <recent name=\"\" />\n    </key>\n  </component>\n  <component name=\"RunManager\" selected=\"Application.Main (2)\">\n    <configuration name=\"Main (2)\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.editor4j.Main\" />\n      <module name=\"Editor.main\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.editor4j.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.editor4j.Main\" />\n      <module name=\"Editor.main\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.editor4j.models.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.editor4j.Main\" />\n      <module name=\"Editor\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.editor4j.gui.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Main\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.editor4j.Main\" />\n      <module name=\"Editor\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.editor4j.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"RSTATest\" type=\"Application\" factoryName=\"Application\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"org.editor4j.RSTATest\" />\n      <module name=\"Editor.main\" />\n      <extension name=\"coverage\">\n        <pattern>\n          <option name=\"PATTERN\" value=\"org.editor4j.*\" />\n          <option name=\"ENABLED\" value=\"true\" />\n        </pattern>\n      </extension>\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"Editor4J [dependencies]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"dependencies\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Editor4J [run]\" type=\"GradleRunConfiguration\" factoryName=\"Gradle\" temporary=\"true\">\n      <ExternalSystemSettings>\n        <option name=\"executionName\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"externalSystemIdString\" value=\"GRADLE\" />\n        <option name=\"scriptParameters\" />\n        <option name=\"taskDescriptions\">\n          <list />\n        </option>\n        <option name=\"taskNames\">\n          <list>\n            <option value=\"run\" />\n          </list>\n        </option>\n        <option name=\"vmOptions\" />\n      </ExternalSystemSettings>\n      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>\n      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>\n      <DebugAllEnabled>false</DebugAllEnabled>\n      <method v=\"2\" />\n    </configuration>\n    <configuration name=\"Scratch\" type=\"Java Scratch\" temporary=\"true\" nameIsGenerated=\"true\">\n      <option name=\"MAIN_CLASS_NAME\" value=\"Scratch\" />\n      <option name=\"SCRATCH_FILE_URL\" value=\"file://$APPLICATION_CONFIG_DIR$/scratches/scratch.java\" />\n      <method v=\"2\">\n        <option name=\"Make\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <recent_temporary>\n      <list>\n        <item itemvalue=\"Application.RSTATest\" />\n        <item itemvalue=\"Java Scratch.Scratch\" />\n        <item itemvalue=\"Gradle.Editor4J [run]\" />\n        <item itemvalue=\"Gradle.Editor4J [dependencies]\" />\n        <item itemvalue=\"Application.Main (2)\" />\n      </list>\n    </recent_temporary>\n  </component>\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"36134b33-756d-4aa7-b6e8-f883a3e90af6\" name=\"Changes\" comment=\"\" />\n      <created>1630080149413</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1630080149413</updated>\n    </task>\n    <task id=\"LOCAL-00001\" summary=\"Added Theme saving/reloading\">\n      <created>1630165534863</created>\n      <option name=\"number\" value=\"00001\" />\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1630165534863</updated>\n    </task>\n    <task id=\"LOCAL-00002\" summary=\"Removed useless save button\">\n      <created>1633264725855</created>\n      <option name=\"number\" value=\"00002\" />\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633264725855</updated>\n    </task>\n    <task id=\"LOCAL-00003\" summary=\"Moved to Gradle finally!\">\n      <created>1633793064111</created>\n      <option name=\"number\" value=\"00003\" />\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633793064111</updated>\n    </task>\n    <task id=\"LOCAL-00004\" summary=\"User settings are saved and loaded in again on startup!\">\n      <created>1633964239297</created>\n      <option name=\"number\" value=\"00004\" />\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\n      <option name=\"project\" value=\"LOCAL\" />\n      <updated>1633964239297</updated>\n    </task>\n    <option name=\"localTasksCounter\" value=\"5\" />\n    <servers />\n  </component>\n  <component name=\"Vcs.Log.Tabs.Properties\">\n    <option name=\"TAB_STATES\">\n      <map>\n        <entry key=\"MAIN\">\n          <value>\n            <State />\n          </value>\n        </entry>\n      </map>\n    </option>\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\n  </component>\n  <component name=\"VcsManagerConfiguration\">\n    <option name=\"ADD_EXTERNAL_FILES_SILENTLY\" value=\"true\" />\n    <MESSAGE value=\"Added Theme saving/reloading\" />\n    <MESSAGE value=\"Removed useless save button\" />\n    <MESSAGE value=\"Moved to Gradle finally!\" />\n    <MESSAGE value=\"User settings are saved and loaded in again on startup!\" />\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"User settings are saved and loaded in again on startup!\" />\n  </component>\n  <component name=\"XDebuggerManager\">\n    <breakpoint-manager>\n      <breakpoints>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/org/editor4j/gui/events/SettingsListener.java</url>\n          <line>27</line>\n          <option name=\"timeStamp\" value=\"3\" />\n        </line-breakpoint>\n        <line-breakpoint enabled=\"true\" type=\"java-line\">\n          <url>file://$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java</url>\n          <line>44</line>\n          <option name=\"timeStamp\" value=\"4\" />\n        </line-breakpoint>\n      </breakpoints>\n    </breakpoint-manager>\n    <pin-to-top-manager>\n      <pinned-members>\n        <PinnedItemInfo parentTag=\"org.fife.ui.rsyntaxtextarea.RSyntaxTextArea\" memberName=\"font\" />\n      </pinned-members>\n    </pin-to-top-manager>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 2d2c5954836c085f51d7b704aaffb0aac5f1551b)
++++ b/.idea/workspace.xml	(date 1635602203863)
+@@ -4,51 +4,49 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="36134b33-756d-4aa7-b6e8-f883a3e90af6" name="Changes" comment="User settings are saved and loaded in again on startup!">
+-      <change afterPath="$PROJECT_DIR$/.idea/libraries/rsyntaxtextarea_3_1_4_SNAPSHOT.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/org/editor4j/gui/BaseDialog.java" afterDir="false" />
+-      <change afterPath="$PROJECT_DIR$/src/org/editor4j/gui/styles/SystemStyle.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" afterDir="false" />
++    <list default="true" id="36134b33-756d-4aa7-b6e8-f883a3e90af6" name="Changes" comment="SettingsDialog now reflects the value of current settings">
+       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/Editor.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/Editor.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/Editor.class" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/Main.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JEditor.class" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JField.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JField.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JVoid.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JField.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JFontBox$FontRenderer.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/JFontBox.class" beforeDir="false" />
+       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/SettingsDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/SettingsDialog.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/NewFileListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/NewFileListener.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/OpenFileListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/OpenFileListener.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SaveFileListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SaveFileListener.class" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SettingsListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SettingsListener.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/Style.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/Style.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/UIUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/UIUtils.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/NewFileListener.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/OpenFileListener.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SaveFileListener.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/events/SettingsListener.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/DarkStyle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/DarkStyle.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/LightStyle.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/LightStyle.class" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/gui/styles/MetalStyle.class" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/FileManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/FileManager.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/SettingsManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/org/editor4j/managers/SettingsManager.class" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/project-info/Worklist.txt" beforeDir="false" afterPath="$PROJECT_DIR$/project-info/Worklist.txt" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/project-info/font-applying.bug" beforeDir="false" afterPath="$PROJECT_DIR$/project-info/font-applying.bug" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/settings.e4j" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/Editor.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/Editor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/models/Editor.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/org/editor4j/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/Main.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/JEditor.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/JField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/JField.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/JVoid.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/JEmptyPanel.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/Style.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/Style.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/events/NewFileListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/events/NewFileListener.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/events/OpenFileListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/events/OpenFileListener.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/events/SaveFileListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/events/SaveFileListener.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/events/SettingsListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/events/SettingsListener.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/BaseDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/components/JBaseDialog.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/JEmptyPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/components/JEmptyPanel.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/JField.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/components/JField.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/JFontBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/components/JFontBox.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/UIUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/UIUtils.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/events/NewFileListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/NewFileMenuItemListener.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/events/OpenFileListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/OpenFileMenuItemListener.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/events/SaveFileListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/listeners/SaveFileMenuItemListener.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/styles/DarkStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/styles/DarkStyle.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/styles/LightStyle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/gui/styles/LightStyle.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/styles/MetalStyle.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/gui/styles/SystemStyle.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/managers/FileManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/managers/FileManager.java" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/src/org/editor4j/managers/SettingsManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/managers/SettingsManager.java" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/org/editor4j/models/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/editor4j/models/Settings.java" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -138,13 +136,13 @@
+       <recent name="" />
+     </key>
+   </component>
+-  <component name="RunManager" selected="Application.Main (2)">
+-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
++  <component name="RunManager" selected="Application.Main">
++    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+       <option name="MAIN_CLASS_NAME" value="org.editor4j.Main" />
+       <module name="Editor.main" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="org.editor4j.*" />
++          <option name="PATTERN" value="org.editor4j.models.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -196,7 +194,7 @@
+       <module name="Editor.main" />
+       <extension name="coverage">
+         <pattern>
+-          <option name="PATTERN" value="org.editor4j.*" />
++          <option name="PATTERN" value="org.editor4j.models.*" />
+           <option name="ENABLED" value="true" />
+         </pattern>
+       </extension>
+@@ -255,11 +253,11 @@
+     </configuration>
+     <recent_temporary>
+       <list>
++        <item itemvalue="Application.Main" />
+         <item itemvalue="Application.RSTATest" />
+         <item itemvalue="Java Scratch.Scratch" />
+         <item itemvalue="Gradle.Editor4J [run]" />
+         <item itemvalue="Gradle.Editor4J [dependencies]" />
+-        <item itemvalue="Application.Main (2)" />
+       </list>
+     </recent_temporary>
+   </component>
+@@ -300,7 +298,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1633964239297</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Need a break">
++      <created>1635001194075</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1635001194075</updated>
++    </task>
++    <task id="LOCAL-00006" summary="SettingsDialog now reflects the value of current settings">
++      <created>1635596538917</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1635596538917</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="Vcs.Log.Tabs.Properties">
+@@ -321,23 +333,11 @@
+     <MESSAGE value="Removed useless save button" />
+     <MESSAGE value="Moved to Gradle finally!" />
+     <MESSAGE value="User settings are saved and loaded in again on startup!" />
+-    <option name="LAST_COMMIT_MESSAGE" value="User settings are saved and loaded in again on startup!" />
++    <MESSAGE value="Need a break" />
++    <MESSAGE value="SettingsDialog now reflects the value of current settings" />
++    <option name="LAST_COMMIT_MESSAGE" value="SettingsDialog now reflects the value of current settings" />
+   </component>
+   <component name="XDebuggerManager">
+-    <breakpoint-manager>
+-      <breakpoints>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/org/editor4j/gui/events/SettingsListener.java</url>
+-          <line>27</line>
+-          <option name="timeStamp" value="3" />
+-        </line-breakpoint>
+-        <line-breakpoint enabled="true" type="java-line">
+-          <url>file://$PROJECT_DIR$/src/org/editor4j/gui/SettingsDialog.java</url>
+-          <line>44</line>
+-          <option name="timeStamp" value="4" />
+-        </line-breakpoint>
+-      </breakpoints>
+-    </breakpoint-manager>
+     <pin-to-top-manager>
+       <pinned-members>
+         <PinnedItemInfo parentTag="org.fife.ui.rsyntaxtextarea.RSyntaxTextArea" memberName="font" />
+Index: project-info/font-applying.bug
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>Reproduction Steps\n- Launch Editor4J without settings.e4j present\n- Open a file\n- Go to Editor > Settings or CTRL-ALT-S\n- Go to Fonts\n- Select any font and click apply\n- NOTE: Bug only seems to occur on Light Style\n- NOTE: Bug doesn't occur when using JTextArea instead of RSTA, investigating...\n- When pressed the first time, the LaF and RSTA theme is applied but font stays the same\n- When pressed again, the font is applied to RSTA\n\n\nConclusions:\n\n- SettingsDialog's controls don't yet reflect the values of SettingsManager.currentSettings\nso every time a SettingsDialog is spawned, it defaults to the dark style,\n\n- The bug is not in SettingsDialog. Checking in the debugger shows that all values are matching\nas expected
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/project-info/font-applying.bug b/project-info/font-applying.bug
+--- a/project-info/font-applying.bug	(revision 2d2c5954836c085f51d7b704aaffb0aac5f1551b)
++++ b/project-info/font-applying.bug	(date 1635104748054)
+@@ -1,3 +1,5 @@
++[This bug is now closed, see RSTATest.java for details]
++
+ Reproduction Steps
+ - Launch Editor4J without settings.e4j present
+ - Open a file
+@@ -16,4 +18,20 @@
+ so every time a SettingsDialog is spawned, it defaults to the dark style,
+ 
+ - The bug is not in SettingsDialog. Checking in the debugger shows that all values are matching
+-as expected
+\ No newline at end of file
++as expected
++
++- The Bug is not in my code. It seems to be in RSTA's Theme.load method, which doesn't seem to load
++a proper font
++
++Quote: "/**
++        	 * Loads a theme.
++        	 *
++        	 * @param in The input stream to read from.  This will be closed when this
++        	 *        method returns.
++        	 * @param baseFont The default font to use for any "base font" properties
++        	 *        not specified in the theme XML.  If this is <code>null</code>,
++        	 *        a default monospaced font will be used.
++        	 * @return The theme.
++        	 * @throws IOException If an IO error occurs.
++        	 * @see #save(OutputStream)
++        	 */"
+\ No newline at end of file

@@ -1,0 +1,8 @@
+GEM consists of 3 parts:
+
+- GUI, this is built first
+- Events, event listeners are attached to the GUI
+- Managers, listeners when triggered interact with managers to change the GUI again
+
+- GB A GUI Bus, where a Manager can request a reference to a GUI component through
+a Bus
