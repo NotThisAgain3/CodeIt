@@ -9,7 +9,7 @@ public class LightStyle extends Style {
     public LightStyle() throws IOException {
         this.name = "Light";
         this.lookAndFeel = "com.formdev.flatlaf.FlatLightLaf";
-        this.themePath = "/org/fife/ui/rsyntaxtextarea/themes/idea.xml";
+        this.themePath = "/org/fife/ui/rsyntaxtextarea/themes/vs.xml";
 
     }
 }
