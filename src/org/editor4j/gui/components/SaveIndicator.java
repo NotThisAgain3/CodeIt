@@ -8,7 +8,6 @@ public class SaveIndicator extends JPanel {
     public JLabel indicator = new JLabel();
     public SaveIndicator(){
         setLayout(new BorderLayout());
-        indicator.
         add(indicator, BorderLayout.EAST);
         setOpaque(false);
     }
