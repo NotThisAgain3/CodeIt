@@ -20,6 +20,7 @@ public class SettingsManager {
             STARTUP_DEFAULT_SETTINGS = new Settings();
             STARTUP_DEFAULT_SETTINGS.style = new LightStyle();
             STARTUP_DEFAULT_SETTINGS.font = new Font("JetBrains Mono Regular", Font.PLAIN, 20);
+            STARTUP_DEFAULT_SETTINGS.lineWrap = false;
         } catch (IOException e) {
             e.printStackTrace();
         }
