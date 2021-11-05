@@ -2,7 +2,8 @@ Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
 - Automatic Syntax Highlighter detection by file extension, e.g SYNTAX_STYLE_RUBY for .rb files (DONE)
-- Saved / Not Saved indicator (title bar?)
+- Saved / Not Saved indicator (title bar?) (Done)
+
 - SettingsDialog gui polishing, (it looks really unfinished)
 - Restore to defaults button in SettingsDialog
 - Editor wide font application

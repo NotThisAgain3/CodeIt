@@ -8,6 +8,7 @@ public class SaveIndicator extends JPanel {
     public JLabel indicator = new JLabel();
     public SaveIndicator(){
         setLayout(new BorderLayout());
+        indicator.setForeground(Color.LIGHT_GRAY);
         add(indicator, BorderLayout.EAST);
         setOpaque(false);
     }
@@ -17,11 +18,9 @@ public class SaveIndicator extends JPanel {
 
         if(saved) {
             indicator.setText("Saved");
-            indicator.setForeground(Color.GREEN);
         }
         else {
             indicator.setText("Not Saved");
-            indicator.setForeground(Color.RED);
         }
     }
 }
