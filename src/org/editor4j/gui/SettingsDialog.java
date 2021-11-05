@@ -23,6 +23,7 @@ public class SettingsDialog extends JBaseDialog {
     JComboBox<Style> styles = new JComboBox<>();
     JFontBox fonts = new JFontBox(15, Font.PLAIN, GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts());
     JSpinner fontSizes = new JSpinner(new SpinnerNumberModel(20, 10, 50, 1));
+    JCheckBox lineWrap = new JCheckBox();
     JPanel jPanel = new JPanel();
 
     
@@ -54,6 +55,7 @@ public class SettingsDialog extends JBaseDialog {
         styles.getModel().setSelectedItem(currentSettings.style);
         fonts.getModel().setSelectedItem(currentSettings.font.getFontName());
         fontSizes.setValue(currentSettings.font.getSize());
+        lineWrap.setSelected(currentSettings.lineWrap);
     }
 
     private JPanel buildStyleOptions() {
@@ -79,7 +81,7 @@ public class SettingsDialog extends JBaseDialog {
 
         jPanel.add(new JField("Font", fonts));
         jPanel.add(new JField("Size", fontSizes));
-
+        jPanel.add(new JField("Line Wrap", lineWrap));
         return jPanel;
     }
 
@@ -91,6 +93,7 @@ public class SettingsDialog extends JBaseDialog {
         String fontName = (String) fonts.getSelectedItem();
 
         settings.font = new Font(fontName, Font.PLAIN, fontSize);
+        settings.lineWrap = lineWrap.isSelected();
         return settings;
     }
 

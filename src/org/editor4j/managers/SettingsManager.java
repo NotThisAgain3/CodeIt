@@ -19,6 +19,7 @@ public class SettingsManager {
         try {
             STARTUP_DEFAULT_SETTINGS = new Settings();
             STARTUP_DEFAULT_SETTINGS.style = new LightStyle();
+            STARTUP_DEFAULT_SETTINGS.font = new Font("JetBrains Mono Regular", Font.PLAIN, 20);
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -44,6 +45,7 @@ public class SettingsManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        editor.codeEditor.setLineWrap(s.lineWrap);
     }
 
     public static void saveSettingsToFile(Settings s) {
