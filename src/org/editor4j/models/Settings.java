@@ -6,5 +6,5 @@ import java.io.Serializable;
 public class Settings implements Serializable {
     public Style style;
     public Font font;
-    public boolean lineWrap;
+    public boolean lineWrapEnabled;
 }

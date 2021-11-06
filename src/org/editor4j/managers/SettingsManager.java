@@ -20,7 +20,7 @@ public class SettingsManager {
             STARTUP_DEFAULT_SETTINGS = new Settings();
             STARTUP_DEFAULT_SETTINGS.style = new LightStyle();
             STARTUP_DEFAULT_SETTINGS.font = new Font("JetBrains Mono Regular", Font.PLAIN, 20);
-            STARTUP_DEFAULT_SETTINGS.lineWrap = false;
+            STARTUP_DEFAULT_SETTINGS.lineWrapEnabled = false;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -46,7 +46,8 @@ public class SettingsManager {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        editor.codeEditor.setLineWrap(s.lineWrap);
+
+        editor.codeEditor.setLineWrap(s.lineWrapEnabled);
     }
 
     public static void saveSettingsToFile(Settings s) {
