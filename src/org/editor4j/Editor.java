@@ -29,7 +29,6 @@ public class Editor {
         codeEditor.setCodeFoldingEnabled(true);
         codeEditor.getDocument().addDocumentListener(new SavedDocumentListener(this));
 
-
         jMenuBar = new JMenuBar();
         fileMenu = new JMenu("File");
         newFileMenuItem = new JMenuItem("New File");
@@ -65,7 +64,7 @@ public class Editor {
 
         jFrame.setJMenuBar(jMenuBar);
 
-        jFrame.setContentPane(new JEmptyPanel("Get Started by going to File | New File or File | Open File"));
+        jFrame.setContentPane(new JEmptyPanel("Get Started by going to File > New File or File > Open File"));
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setSize(640, 480);
         jFrame.setVisible(true);
