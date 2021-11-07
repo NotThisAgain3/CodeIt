@@ -1,6 +1,8 @@
 package org.editor4j.gui;
 
 
+import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+
 import javax.swing.*;
 import java.awt.*;
 import java.io.File;
@@ -14,11 +16,7 @@ public class UIUtils {
             UIManager.setLookAndFeel(c);
         } catch (UnsupportedLookAndFeelException e) {
             JOptionPane.showMessageDialog(null, "LaF " + c + " caused an exception: " + e.getMessage());
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        } catch (InstantiationException e) {
-            e.printStackTrace();
-        } catch (IllegalAccessException e) {
+        } catch (ClassNotFoundException | InstantiationException | IllegalAccessException e) {
             e.printStackTrace();
         }
     }
@@ -62,4 +60,6 @@ public class UIUtils {
                 return SYNTAX_STYLE_NONE;
         }
     }
+
+
 }
