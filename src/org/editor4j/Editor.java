@@ -15,8 +15,8 @@ import static org.editor4j.gui.UIUtils.osMenuMask;
 
 public class Editor {
 
-    public RSyntaxTextArea codeEditor = new RSyntaxTextArea();
-    public RTextScrollPane codeEditorScrollPane = new RTextScrollPane(codeEditor);
+    public RSyntaxTextArea codeEditor;
+    public RTextScrollPane codeEditorScrollPane;
     public JFrame jFrame = new JFrame("Editor4J");
     public JMenuBar jMenuBar;
     public JMenu fileMenu;
@@ -25,7 +25,9 @@ public class Editor {
     public JMenuItem settingsMenuItem;
     public SaveIndicator saveIndicator;
     public void createNewEditor() {
-        SettingsManager.applySettings(SettingsManager.currentSettings, this);
+
+        codeEditor = new RSyntaxTextArea();
+        codeEditorScrollPane = new RTextScrollPane(codeEditor);
         codeEditor.setCodeFoldingEnabled(true);
         codeEditor.getDocument().addDocumentListener(new SavedDocumentListener(this));
 
@@ -57,7 +59,6 @@ public class Editor {
 
         jMenuBar.add(fileMenu);
         jMenuBar.add(editorMenu);
-        jMenuBar.add(Box.createHorizontalGlue());
         saveIndicator = new SaveIndicator();
         jMenuBar.add(saveIndicator);
 
@@ -65,6 +66,9 @@ public class Editor {
         jFrame.setJMenuBar(jMenuBar);
 
         jFrame.setContentPane(new JEmptyPanel("Get Started by going to File > New File or File > Open File"));
+        SettingsManager.applySettings(SettingsManager.currentSettings, this);
+
+
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setSize(640, 480);
         jFrame.setVisible(true);
