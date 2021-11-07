@@ -63,6 +63,12 @@ public class UIUtils {
     }
 
 
+    /***
+     * This is a workaround for SwingUtilities.updateComponentTreeUI() not working
+     * on RSyntaxTextArea instances when changing RSTA's Theme. Use this method when
+     * updating the Look and Feel and then changing RSTA's Theme.
+     * @param rootComponent
+     */
     public static void updateComponentTreeUI(Component rootComponent) {
 
         if (rootComponent instanceof JComponent) {
@@ -83,6 +89,10 @@ public class UIUtils {
 
         if (children != null) {
             for (Component child : children) {
+                /*Gutters act weird if you try to call SwingUtilities.updateComponentTreeUI()
+                On it, it defaults to Monospaced Font when you apply a given font twice, e.g Ani
+                I don't think this issue has anything to do with Fonts, but rather the Gutter
+                object losing it's state when it's UI is updated*/
                 if(!(child instanceof Gutter))
                     updateComponentTreeUI(child);
             }
