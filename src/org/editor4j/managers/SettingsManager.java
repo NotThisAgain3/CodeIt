@@ -21,6 +21,7 @@ public class SettingsManager {
             STARTUP_DEFAULT_SETTINGS.style = new LightStyle();
             STARTUP_DEFAULT_SETTINGS.font = new Font("JetBrains Mono Regular", Font.PLAIN, 20);
             STARTUP_DEFAULT_SETTINGS.lineWrapEnabled = false;
+            STARTUP_DEFAULT_SETTINGS.tabSize = 4;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -48,6 +49,7 @@ public class SettingsManager {
         }
 
         editor.codeEditor.setLineWrap(s.lineWrapEnabled);
+        editor.codeEditor.setTabSize(s.tabSize);
     }
 
     public static void saveSettingsToFile(Settings s) {

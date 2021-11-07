@@ -23,7 +23,7 @@ public class SettingsDialog extends JBaseDialog {
     JComboBox<Style> styles = new JComboBox<>();
     JFontBox fonts = new JFontBox(15, Font.PLAIN, GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts());
     JSpinner fontSizes = new JSpinner(new SpinnerNumberModel(20, 10, 50, 1));
-
+    JSpinner tabSizes = new JSpinner(new SpinnerNumberModel(4, 2, 10, 1));
     JCheckBox lineWrap = new JCheckBox();
     JPanel jPanel = new JPanel();
 
@@ -54,6 +54,7 @@ public class SettingsDialog extends JBaseDialog {
 
     private JPanel buildGeneralOptions() {
         JPanel jPanel = new JPanel();
+        jPanel.add(new JField("Tab Size", tabSizes));
         jPanel.add(new JField("Enable Line Wrapping", lineWrap));
         return jPanel;
     }
@@ -64,6 +65,7 @@ public class SettingsDialog extends JBaseDialog {
         fonts.getModel().setSelectedItem(currentSettings.font.getFontName());
         fontSizes.setValue(currentSettings.font.getSize());
         lineWrap.setSelected(currentSettings.lineWrapEnabled);
+        tabSizes.setValue(currentSettings.tabSize);
     }
 
     private JPanel buildStyleOptions() {
@@ -101,6 +103,7 @@ public class SettingsDialog extends JBaseDialog {
 
         settings.font = new Font(fontName, Font.PLAIN, fontSize);
         settings.lineWrapEnabled = lineWrap.isSelected();
+        settings.tabSize = (int) tabSizes.getValue();
         return settings;
     }
 
