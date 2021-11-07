@@ -2,6 +2,7 @@ package org.editor4j.gui;
 
 
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rtextarea.Gutter;
 
 import javax.swing.*;
 import java.awt.*;
@@ -62,4 +63,34 @@ public class UIUtils {
     }
 
 
+    public static void updateComponentTreeUI(Component rootComponent) {
+
+        if (rootComponent instanceof JComponent) {
+            JComponent comp = (JComponent) rootComponent;
+            comp.updateUI();
+            JPopupMenu popupMenu = comp.getComponentPopupMenu();
+            if(popupMenu != null)
+                updateComponentTreeUI(popupMenu);
+        }
+
+        Component[] children = null;
+
+        if (rootComponent instanceof JMenu)
+            children = ((JMenu)rootComponent).getMenuComponents();
+
+        else if (rootComponent instanceof Container)
+            children = ((Container)rootComponent).getComponents();
+
+        if (children != null) {
+            for (Component child : children) {
+                if(!(child instanceof Gutter))
+                    updateComponentTreeUI(child);
+            }
+        }
+
+        rootComponent.invalidate();
+        rootComponent.validate();
+        rootComponent.repaint();
+    }
+    
 }

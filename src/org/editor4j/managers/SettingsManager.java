@@ -39,7 +39,7 @@ public class SettingsManager {
     }
     public static void applySettings(Settings s, Editor editor){
         UIUtils.setLookAndFeel(s.style.lookAndFeel);
-        SwingUtilities.updateComponentTreeUI(editor.jFrame);
+        UIUtils.updateComponentTreeUI(editor.jFrame);
 
         try {
             Theme theme = Theme.load(SettingsManager.class.getResourceAsStream(s.style.themePath), s.font);
@@ -48,8 +48,8 @@ public class SettingsManager {
             e.printStackTrace();
         }
 
-        editor.codeEditor.setLineWrap(s.lineWrapEnabled);
         editor.codeEditor.setTabSize(s.tabSize);
+        editor.codeEditor.setLineWrap(s.lineWrapEnabled);
     }
 
     public static void saveSettingsToFile(Settings s) {
