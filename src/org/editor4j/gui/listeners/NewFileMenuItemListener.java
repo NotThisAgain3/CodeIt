@@ -19,23 +19,18 @@ import java.io.IOException;
     public void actionPerformed(ActionEvent actionEvent) {
         JFileChooser jFileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
 
-        int returnValue = jFileChooser.showOpenDialog(null);
+        int returnValue = jFileChooser.showOpenDialog(editor.jFrame);
         if (returnValue == JFileChooser.APPROVE_OPTION) {
-            editor.jFrame.setContentPane(editor.codeEditorScrollPane);
-            editor.jFrame.revalidate();
-            editor.jFrame.repaint();
+            editor.setCodeEditorAsContentPane();
             try {
                 boolean isNewFileCreated = jFileChooser.getSelectedFile().createNewFile();
                 if(isNewFileCreated){
                     FileManager.openedFile = jFileChooser.getSelectedFile();
-                    editor.codeEditor.setText(FileManager.openFile(jFileChooser.getSelectedFile().getPath()));
-                    editor.jFrame.setTitle(UIUtils.formatTitleBar(FileManager.openedFile.getPath()));
+                    editor.openInEditor(UIUtils.getFileExtension(FileManager.openedFile), FileManager.openFile(FileManager.openedFile.getPath()));
 
-
-                    editor.codeEditor.setSyntaxEditingStyle(UIUtils.getSyntaxEditingStyle(UIUtils.getFileExtension(FileManager.openedFile)));
                 }
                 else {
-                    JOptionPane.showMessageDialog(null, "Failed to create file " + jFileChooser.getSelectedFile());
+                    JOptionPane.showMessageDialog(editor.jFrame, "Failed to create file " + jFileChooser.getSelectedFile());
                 }
             } catch (IOException e) {
                 e.printStackTrace();

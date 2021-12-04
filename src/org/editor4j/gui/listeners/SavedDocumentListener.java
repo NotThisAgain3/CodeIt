@@ -26,7 +26,6 @@ public class SavedDocumentListener implements DocumentListener {
     @Override
     public void changedUpdate(DocumentEvent e) {
         SavedManager.saved = false;
-
-        editor.saveIndicator.setStatus(SavedManager.saved);
+        editor.updateSavedStatus(SavedManager.saved);
     }
 }

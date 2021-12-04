@@ -1,30 +1,38 @@
 package org.editor4j;
 
+import org.editor4j.gui.UIUtils;
 import org.editor4j.gui.components.JEmptyPanel;
 import org.editor4j.gui.components.SaveIndicator;
 import org.editor4j.gui.listeners.*;
+import org.editor4j.managers.FileManager;
+import org.editor4j.managers.SavedManager;
 import org.editor4j.managers.SettingsManager;
+import org.editor4j.models.Settings;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
+import org.fife.ui.rsyntaxtextarea.Theme;
 import org.fife.ui.rtextarea.RTextScrollPane;
 
 import javax.swing.*;
 import java.awt.event.InputEvent;
 import java.awt.event.KeyEvent;
+import java.io.IOException;
 
 import static org.editor4j.gui.UIUtils.osMenuMask;
 
-public class Editor {
+public class Editor implements EditorSignals {
 
     public RSyntaxTextArea codeEditor;
     public RTextScrollPane codeEditorScrollPane;
     public JFrame jFrame = new JFrame("Editor4J");
     public JMenuBar jMenuBar;
-    public JMenu fileMenu;
+    public JMenu fileMenu, editorMenu, findMenu;
     public JMenuItem newFileMenuItem, openFileMenuItem, saveFileMenuItem;
-    public JMenu editorMenu;
     public JMenuItem settingsMenuItem;
     public SaveIndicator saveIndicator;
     public void createNewEditor() {
+        //Workaround, codeEditorScrollPane isn't attached on startup, so it doesn't
+        //get the new LaF
+        UIUtils.setLookAndFeel(SettingsManager.currentSettings.style.lookAndFeel);
 
         codeEditor = new RSyntaxTextArea();
         codeEditorScrollPane = new RTextScrollPane(codeEditor);
@@ -49,6 +57,10 @@ public class Editor {
         fileMenu.add(newFileMenuItem);
         fileMenu.add(saveFileMenuItem);
 
+        findMenu = new JMenu("Find");
+        findMenu.addMenuListener(new FindMenuListener(this));
+        findMenu.setMnemonic(KeyEvent.VK_F);
+
         editorMenu = new JMenu("Editor");
         settingsMenuItem = new JMenuItem("Settings");
 
@@ -58,6 +70,7 @@ public class Editor {
         editorMenu.add(settingsMenuItem);
 
         jMenuBar.add(fileMenu);
+        jMenuBar.add(findMenu);
         jMenuBar.add(editorMenu);
         saveIndicator = new SaveIndicator();
         jMenuBar.add(saveIndicator);
@@ -66,11 +79,45 @@ public class Editor {
         jFrame.setJMenuBar(jMenuBar);
 
         jFrame.setContentPane(new JEmptyPanel("Get Started by going to File > New File or File > Open File"));
-        SettingsManager.applySettings(SettingsManager.currentSettings, this);
+
+        applySettings(SettingsManager.currentSettings);
 
 
         jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jFrame.setSize(640, 480);
         jFrame.setVisible(true);
+    }
+
+    @Override
+    public void setCodeEditorAsContentPane() {
+        jFrame.setContentPane(codeEditorScrollPane);
+        jFrame.revalidate();
+        jFrame.repaint();
+    }
+
+    @Override
+    public void openInEditor(String fileExtension, String text) {
+        codeEditor.setText(text);
+        jFrame.setTitle(UIUtils.formatTitleBar(FileManager.openedFile.getPath()));
+        codeEditor.setSyntaxEditingStyle(UIUtils.getSyntaxEditingStyle(fileExtension));
+    }
+
+    @Override
+    public void updateSavedStatus(boolean saved) {
+        saveIndicator.setStatus(saved);
+    }
+
+    @Override
+    public void applySettings(Settings s) {
+        UIUtils.setLookAndFeel(s.style.lookAndFeel);
+        UIUtils.updateComponentTreeUI(jFrame);
+        try {
+            Theme theme = Theme.load(SettingsManager.class.getResourceAsStream(s.style.themePath), s.font);
+            theme.apply(codeEditor);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        codeEditor.setTabSize(s.tabSize);
+        codeEditor.setLineWrap(s.lineWrapEnabled);
     }
 }

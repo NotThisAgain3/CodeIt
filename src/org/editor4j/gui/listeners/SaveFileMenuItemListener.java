@@ -19,8 +19,7 @@ public class SaveFileMenuItemListener implements ActionListener {
             FileManager.saveTextToOpenFile(newText);
 
             SavedManager.saved = true;
-            editor.saveIndicator.setStatus(SavedManager.saved);
-
+            editor.updateSavedStatus(SavedManager.saved);
         }
     }
 }

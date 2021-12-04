@@ -37,20 +37,7 @@ public class SettingsManager {
         //Never happens because deserialize is only called when loadSettings() finds editor.settingsFile
         return null;
     }
-    public static void applySettings(Settings s, Editor editor){
-        UIUtils.setLookAndFeel(s.style.lookAndFeel);
-        UIUtils.updateComponentTreeUI(editor.jFrame);
 
-        try {
-            Theme theme = Theme.load(SettingsManager.class.getResourceAsStream(s.style.themePath), s.font);
-            theme.apply(editor.codeEditor);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        editor.codeEditor.setTabSize(s.tabSize);
-        editor.codeEditor.setLineWrap(s.lineWrapEnabled);
-    }
 
     public static void saveSettingsToFile(Settings s) {
         try {

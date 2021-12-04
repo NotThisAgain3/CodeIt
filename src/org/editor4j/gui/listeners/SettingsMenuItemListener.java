@@ -17,8 +17,6 @@ public class SettingsMenuItemListener implements ActionListener {
         editor = e;
     }
 
-
-
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
 
@@ -27,10 +25,10 @@ public class SettingsMenuItemListener implements ActionListener {
         settingsDialog.apply.addActionListener(actionEvent1->{
             try {
                 Settings chosenSettings = settingsDialog.getSettings();
-                SettingsManager.saveSettingsToFile(chosenSettings);
-                SettingsManager.applySettings(chosenSettings, editor);
-
                 SettingsManager.currentSettings = chosenSettings;
+                SettingsManager.saveSettingsToFile(chosenSettings);
+                editor.applySettings(chosenSettings);
+
             } catch (IOException e) {
                 e.printStackTrace();
             }
