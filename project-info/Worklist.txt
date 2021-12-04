@@ -3,5 +3,5 @@ A few more things before Editor4J 1.0 rolls out:
 
 - Fix Metal ScrollBar Bug (DONE)
 - Add Signal interface into Editor.java (DONE)
-
+- Polish Editor Creation Code
 
