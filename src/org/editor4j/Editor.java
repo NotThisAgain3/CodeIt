@@ -34,13 +34,30 @@ public class Editor implements EditorSignals {
         //get the new LaF
         UIUtils.setLookAndFeel(SettingsManager.currentSettings.style.lookAndFeel);
 
+        createCodeEditor();
+        createMenuItems();
+
+        jFrame.setJMenuBar(jMenuBar);
+
+        jFrame.setContentPane(new JEmptyPanel("Get Started by going to File > New File or File > Open File"));
+
+        applySettings(SettingsManager.currentSettings);
+        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jFrame.setSize(640, 480);
+        jFrame.setVisible(true);
+    }
+
+    private void createCodeEditor() {
         codeEditor = new RSyntaxTextArea();
         codeEditorScrollPane = new RTextScrollPane(codeEditor);
         codeEditor.setCodeFoldingEnabled(true);
         codeEditor.getDocument().addDocumentListener(new SavedDocumentListener(this));
+    }
 
+    public void createMenuItems(){
         jMenuBar = new JMenuBar();
         fileMenu = new JMenu("File");
+
         newFileMenuItem = new JMenuItem("New File");
         openFileMenuItem = new JMenuItem("Open File");
         saveFileMenuItem = new JMenuItem("Save File");
@@ -74,18 +91,6 @@ public class Editor implements EditorSignals {
         jMenuBar.add(editorMenu);
         saveIndicator = new SaveIndicator();
         jMenuBar.add(saveIndicator);
-
-
-        jFrame.setJMenuBar(jMenuBar);
-
-        jFrame.setContentPane(new JEmptyPanel("Get Started by going to File > New File or File > Open File"));
-
-        applySettings(SettingsManager.currentSettings);
-
-
-        jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        jFrame.setSize(640, 480);
-        jFrame.setVisible(true);
     }
 
     @Override
