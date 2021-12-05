@@ -5,7 +5,6 @@ import org.editor4j.gui.components.JEmptyPanel;
 import org.editor4j.gui.components.SaveIndicator;
 import org.editor4j.gui.listeners.*;
 import org.editor4j.managers.FileManager;
-import org.editor4j.managers.SavedManager;
 import org.editor4j.managers.SettingsManager;
 import org.editor4j.models.Settings;
 import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
@@ -25,8 +24,9 @@ public class Editor implements EditorSignals {
     public RTextScrollPane codeEditorScrollPane;
     public JFrame jFrame = new JFrame("Editor4J");
     public JMenuBar jMenuBar;
-    public JMenu fileMenu, editorMenu, findMenu;
+    public JMenu fileMenu, editorMenu, editMenu;
     public JMenuItem newFileMenuItem, openFileMenuItem, saveFileMenuItem;
+    public JMenuItem findSlashReplace;
     public JMenuItem settingsMenuItem;
     public SaveIndicator saveIndicator;
     public void createNewEditor() {
@@ -74,9 +74,11 @@ public class Editor implements EditorSignals {
         fileMenu.add(newFileMenuItem);
         fileMenu.add(saveFileMenuItem);
 
-        findMenu = new JMenu("Find");
-        findMenu.addMenuListener(new FindMenuListener(this));
-        findMenu.setMnemonic(KeyEvent.VK_F);
+        editMenu = new JMenu("Edit");
+        findSlashReplace = new JMenuItem("Find/Replace");
+        findSlashReplace.setAccelerator(KeyStroke.getKeyStroke((char) KeyEvent.VK_F, osMenuMask));
+        findSlashReplace.addActionListener(new FindMenuItemListener(this));
+        editMenu.add(findSlashReplace);
 
         editorMenu = new JMenu("Editor");
         settingsMenuItem = new JMenuItem("Settings");
@@ -87,7 +89,7 @@ public class Editor implements EditorSignals {
         editorMenu.add(settingsMenuItem);
 
         jMenuBar.add(fileMenu);
-        jMenuBar.add(findMenu);
+        jMenuBar.add(editMenu);
         jMenuBar.add(editorMenu);
         saveIndicator = new SaveIndicator();
         jMenuBar.add(saveIndicator);

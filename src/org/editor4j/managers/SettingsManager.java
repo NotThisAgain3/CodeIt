@@ -13,7 +13,7 @@ import java.io.*;
 public class SettingsManager {
     public static Settings currentSettings;
     public static Settings STARTUP_DEFAULT_SETTINGS;
-
+    public static String settingsPath = "appdata/settings.e4j";
 
     static {
         try {
@@ -41,7 +41,7 @@ public class SettingsManager {
 
     public static void saveSettingsToFile(Settings s) {
         try {
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream("settings.e4j"));
+            ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(settingsPath));
 
             objectOutputStream.writeObject(s);
         } catch (IOException e) {
