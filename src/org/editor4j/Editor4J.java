@@ -18,7 +18,7 @@ import java.io.IOException;
 
 import static org.editor4j.gui.UIUtils.osMenuMask;
 
-public class Editor implements EditorSignals {
+public class Editor4J implements EditorSignals {
 
     public RSyntaxTextArea codeEditor;
     public RTextScrollPane codeEditorScrollPane;
@@ -30,6 +30,7 @@ public class Editor implements EditorSignals {
     public JMenuItem settingsMenuItem;
     public SaveIndicator saveIndicator;
     public void createNewEditor() {
+        System.setProperty("sun.java2d.opengl", "true");
         //Workaround, codeEditorScrollPane isn't attached on startup, so it doesn't
         //get the new LaF
         UIUtils.setLookAndFeel(SettingsManager.currentSettings.style.lookAndFeel);
@@ -77,7 +78,7 @@ public class Editor implements EditorSignals {
         editMenu = new JMenu("Edit");
         findSlashReplace = new JMenuItem("Find/Replace");
         findSlashReplace.setAccelerator(KeyStroke.getKeyStroke((char) KeyEvent.VK_F, osMenuMask));
-        findSlashReplace.addActionListener(new FindMenuItemListener(this));
+        findSlashReplace.addActionListener(new FindReplaceMenuItemListener(this));
         editMenu.add(findSlashReplace);
 
         editorMenu = new JMenu("Editor");
