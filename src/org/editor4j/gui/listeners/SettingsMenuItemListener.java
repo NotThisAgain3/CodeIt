@@ -1,9 +1,9 @@
 package org.editor4j.gui.listeners;
 
 import org.editor4j.Editor;
+import org.editor4j.gui.SettingsDialog;
 import org.editor4j.managers.SettingsManager;
 import org.editor4j.models.Settings;
-import org.editor4j.gui.SettingsDialog;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;

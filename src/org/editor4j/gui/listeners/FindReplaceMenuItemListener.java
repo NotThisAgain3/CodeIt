@@ -1,7 +1,7 @@
 package org.editor4j.gui.listeners;
 
 import org.editor4j.Editor;
-import org.editor4j.gui.FindDialog;
+import org.editor4j.gui.FindReplaceDialog;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,8 +16,8 @@ public class FindReplaceMenuItemListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        FindDialog findDialog = new FindDialog(editor);
+        FindReplaceDialog findReplaceDialog = new FindReplaceDialog(editor);
 
-        findDialog.setVisible(true);
+        findReplaceDialog.setVisible(true);
     }
 }

@@ -1,7 +1,8 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
-- Fix Metal ScrollBar Bug (DONE)
-- Add Signal interface into Editor.java (DONE)
-- Polish Editor Creation Code
+- Find And Replace
+- Fix highlighting remaining after closing FindDialog
 
+- Gradle Run Task
+- Set up Git properly, for real this time, with GitKraken maybe?
