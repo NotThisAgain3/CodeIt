@@ -1,12 +1,9 @@
 package org.editor4j.managers;
 
-import org.editor4j.Editor;
-import org.editor4j.gui.UIUtils;
+import org.editor4j.Utils;
 import org.editor4j.gui.styles.LightStyle;
 import org.editor4j.models.Settings;
-import org.fife.ui.rsyntaxtextarea.Theme;
 
-import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 
@@ -40,13 +37,8 @@ public class SettingsManager {
 
 
     public static void saveSettingsToFile(Settings s) {
-        try {
-            ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(settingsPath));
-
-            objectOutputStream.writeObject(s);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+        File settingsFile = new File(settingsPath);
+        Utils.serializeToPath(settingsFile, s);
     }
 
 
