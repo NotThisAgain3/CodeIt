@@ -7,9 +7,11 @@ public class SaveIndicator extends JPanel {
     public boolean status = false;
     public JLabel indicator = new JLabel();
     public SaveIndicator(){
-        setLayout(new BorderLayout());
+        //FlowLayout.RIGHT says "Hey, I don't care about components being placed left to right or right to left
+        //Just grab everybody, and glue them to the RIGHT (while preserving order)
+        setLayout(new FlowLayout(FlowLayout.RIGHT));
         indicator.setForeground(Color.LIGHT_GRAY);
-        add(indicator, BorderLayout.EAST);
+        add(indicator);
         setOpaque(false);
     }
 
