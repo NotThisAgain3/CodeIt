@@ -29,7 +29,8 @@ public class SettingsDialog extends JBaseDialog {
 
     
     public SettingsDialog(){
-        super("Settings", 600, 440);
+        //Simple change just to test Git
+        super("All Settings", 600, 440);
         jPanel.setLayout(new BoxLayout(jPanel, BoxLayout.Y_AXIS));
 
 
