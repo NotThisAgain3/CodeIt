@@ -22,12 +22,12 @@ import java.io.IOException;
         jFileChooser.setDialogTitle("New");
         int returnValue = jFileChooser.showDialog(editor.jFrame, "Create File");
         if (returnValue == JFileChooser.APPROVE_OPTION) {
-            editor.setCodeEditorAsContentPane();
             try {
                 boolean isNewFileCreated = jFileChooser.getSelectedFile().createNewFile();
                 if(isNewFileCreated){
                     FileManager.openedFile = jFileChooser.getSelectedFile();
                     editor.openInEditor(UIUtils.getFileExtension(FileManager.openedFile), FileManager.openFile(FileManager.openedFile.getPath()));
+                    editor.setCodeEditorAsContentPane();
 
                 }
                 else {
