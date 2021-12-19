@@ -1,6 +1,12 @@
 # Editor4J
-A simple, lightweight code-editor for students learning Java.
+A simple, lightweight code-editor by NotThisAgain3.
 
-![](project-info/screenshots/Editor4J-Dark.png)
-![](project-info/screenshots/Editor4J-Light.png)
+Editor4J has everything you expect from editors
+like Theming, Find/Replace, and Code-Highlighting for Java, Python, Ruby, C/C++, Kotlin and much more.
+
+
+
+
+![](project-info/screenshots/code.png)
+![](project-info/screenshots/getting_started.png)
 
