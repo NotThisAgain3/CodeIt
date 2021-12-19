@@ -19,7 +19,8 @@ import java.io.IOException;
     public void actionPerformed(ActionEvent actionEvent) {
         JFileChooser jFileChooser = new JFileChooser(FileSystemView.getFileSystemView().getHomeDirectory());
 
-        int returnValue = jFileChooser.showOpenDialog(editor.jFrame);
+        jFileChooser.setDialogTitle("New");
+        int returnValue = jFileChooser.showDialog(editor.jFrame, "Create File");
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             editor.setCodeEditorAsContentPane();
             try {
