@@ -4,9 +4,10 @@ package org.editor4j.gui;
 import org.editor4j.gui.components.JBaseDialog;
 import org.editor4j.gui.components.JField;
 import org.editor4j.gui.components.JFontBox;
-import org.editor4j.models.Settings;
 import org.editor4j.gui.styles.DarkStyle;
 import org.editor4j.gui.styles.LightStyle;
+import org.editor4j.gui.styles.MetalStyle;
+import org.editor4j.models.Settings;
 import org.editor4j.models.Style;
 
 import javax.swing.*;
@@ -53,20 +54,12 @@ public class SettingsDialog extends JBaseDialog {
         setSettings(currentSettings);
     }
 
+
     private JPanel buildGeneralOptions() {
         JPanel jPanel = new JPanel();
         jPanel.add(new JField("Tab Size", tabSizes));
         jPanel.add(new JField("Enable Line Wrapping", lineWrap));
         return jPanel;
-    }
-
-    private void setSettings(Settings currentSettings) {
-
-        styles.getModel().setSelectedItem(currentSettings.style);
-        fonts.getModel().setSelectedItem(currentSettings.font.getFontName());
-        fontSizes.setValue(currentSettings.font.getSize());
-        lineWrap.setSelected(currentSettings.lineWrapEnabled);
-        tabSizes.setValue(currentSettings.tabSize);
     }
 
     private JPanel buildStyleOptions() {
@@ -76,6 +69,7 @@ public class SettingsDialog extends JBaseDialog {
         try {
             styles.addItem(new LightStyle());
             styles.addItem(new DarkStyle());
+            styles.addItem(new MetalStyle());
 
         } catch (IOException e){
             e.printStackTrace();
@@ -94,6 +88,19 @@ public class SettingsDialog extends JBaseDialog {
         jPanel.add(new JField("Size", fontSizes));
         return jPanel;
     }
+
+    private void setSettings(Settings currentSettings) {
+
+        styles.getModel().setSelectedItem(currentSettings.style);
+        fonts.getModel().setSelectedItem(currentSettings.font.getFontName());
+        fontSizes.setValue(currentSettings.font.getSize());
+        lineWrap.setSelected(currentSettings.lineWrapEnabled);
+        tabSizes.setValue(currentSettings.tabSize);
+    }
+
+
+
+
 
     //Get all the values from the GUI controls into a Settings object
     public Settings getSettings() throws IOException {
