@@ -16,11 +16,13 @@ public class FindReplaceDialog extends JBaseDialog {
     JTextField textToFind = new JTextField();
     JTextField replacementText = new JTextField();
     JField replacementTextField = new JField("Replace With", replacementText);
-    JPanel textFieldsPanel = new JPanel();
-    JCheckBox doFindAndReplace = new JCheckBox();
-    JButton jButton = new JButton("Find");
 
-    JRadioButton backward = new JRadioButton(), forward = new JRadioButton();
+    JPanel textFieldsPanel = new JPanel();
+
+    JCheckBox doFindAndReplace = new JCheckBox();
+    JButton performOperation = new JButton("Find");
+
+    JRadioButton searchBackward = new JRadioButton(), searchForward = new JRadioButton();
     JCheckBox matchCase = new JCheckBox();
 
 
@@ -38,11 +40,11 @@ public class FindReplaceDialog extends JBaseDialog {
         doFindAndReplace.addActionListener(e -> {
             if(doFindAndReplace.isSelected()) {
                 textFieldsPanel.add(replacementTextField);
-                jButton.setText("Replace");
+                performOperation.setText("Replace");
             }
             else {
                 textFieldsPanel.remove(replacementTextField);
-                jButton.setText("Find");
+                performOperation.setText("Find");
             }
 
             textFieldsPanel.revalidate();
@@ -50,14 +52,16 @@ public class FindReplaceDialog extends JBaseDialog {
 
         });
 
+        //Set up options
+
         JPanel optionsPanel = new JPanel();
         optionsPanel.setLayout(new FlowLayout());
         optionsPanel.add(new JField("Find And Replace", doFindAndReplace));
         ButtonGroup buttonGroup = new ButtonGroup();
-        buttonGroup.add(backward);
-        buttonGroup.add(forward);
-        optionsPanel.add(new JField("Backward (Up)", backward));
-        optionsPanel.add(new JField("Forward (Down)", forward));
+        buttonGroup.add(searchBackward);
+        buttonGroup.add(searchForward);
+        optionsPanel.add(new JField("Backward (Up)", searchBackward));
+        optionsPanel.add(new JField("Forward (Down)", searchForward));
         optionsPanel.add(new JField("Match Case", matchCase));
 
         jPanel.add(optionsPanel);
@@ -66,33 +70,31 @@ public class FindReplaceDialog extends JBaseDialog {
 
 
 
-        jButton.addActionListener(e -> {
+        performOperation.addActionListener(e -> {
 
-            boolean fr = doFindAndReplace.isSelected();
+            boolean doingFindAndReplace = doFindAndReplace.isSelected();
 
-            SearchContext context = new SearchContext();
-            String text = textToFind.getText();
-            if (text.length() == 0) {
-                return;
-            }
-            context.setSearchFor(text);
-            context.setMatchCase(matchCase.isSelected());
-            context.setSearchForward(forward.isSelected());
-            context.setWholeWord(false);
+            SearchContext searchContext = new SearchContext();
 
-            if(fr)
-                context.setReplaceWith(replacementText.getText());
+            searchContext.setSearchFor(textToFind.getText());
+            searchContext.setMatchCase(matchCase.isSelected());
+            searchContext.setSearchForward(searchForward.isSelected());
+            searchContext.setWholeWord(false);
 
-            if(fr)
-                SearchEngine.replace(editor.codeEditor, context);
+
+            if(doingFindAndReplace)
+                searchContext.setReplaceWith(replacementText.getText());
+
+            if(doingFindAndReplace)
+                SearchEngine.replace(editor.codeEditor, searchContext);
             else
-                SearchEngine.find(editor.codeEditor, context).wasFound();
+                SearchEngine.find(editor.codeEditor, searchContext).wasFound();
 
         });
 
 
 
-        super.setDefaultButtonOnly(jButton);
+        super.setDefaultButtonOnly(performOperation);
         super.setContent(jPanel);
 
 
