@@ -1,8 +1,3 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
-- Find And Replace
-- Fix highlighting remaining after closing FindDialog
-
-- Gradle Run Task
-- Set up Git properly, for real this time, with GitKraken maybe?
