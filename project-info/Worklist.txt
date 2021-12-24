@@ -1,3 +1,8 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
+- Move Load/Save file code to SwingWorker and off EDT (done as offEDT() versions of methods, but still need testing)
+- Developer Mode, add a dashboard which shows developer options, enabled in Settings
+- Lower Settings Dialog loading time (maybe due to JFontBox)
+- Line wrap is not really line wrap it's word wrap
+
