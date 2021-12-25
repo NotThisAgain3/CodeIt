@@ -8,6 +8,7 @@ import javax.swing.*;
 import javax.swing.filechooser.FileSystemView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.concurrent.ExecutionException;
 
 public class OpenFileMenuItemListener implements ActionListener {
     private final Editor editor;
@@ -23,7 +24,20 @@ public class OpenFileMenuItemListener implements ActionListener {
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             editor.setCodeEditorAsContentPane();
             FileManager.openedFile = jFileChooser.getSelectedFile();
-            editor.openInEditor(UIUtils.getFileExtension(FileManager.openedFile), FileManager.openFile(FileManager.openedFile.getPath()));
+
+            try {
+                FileManager.openFileOffEDT(FileManager.openedFile.getPath(), s -> {
+                    try {
+                        editor.openInEditor(UIUtils.getFileExtension(FileManager.openedFile), (String) s.get());
+                    } catch (InterruptedException | ExecutionException e) {
+                        e.printStackTrace();
+                    }
+                });
+            } catch (ExecutionException | InterruptedException e) {
+                e.printStackTrace();
+            }
+
+
         }
 
     }

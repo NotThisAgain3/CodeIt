@@ -1,6 +1,10 @@
 package org.editor4j.managers;
 
+import org.editor4j.gui.listeners.FileLoadedListener;
+
+import javax.swing.*;
 import java.io.*;
+import java.util.concurrent.ExecutionException;
 
 public class FileManager {
     public static File openedFile = null;
@@ -35,5 +39,32 @@ public class FileManager {
             e.printStackTrace();
         }
         return total;
+    }
+    public static void saveTextToOpenFileOffEDT(String text){
+        SwingWorker swingWorker = new SwingWorker() {
+            @Override
+            protected Object doInBackground() {
+                saveTextToOpenFile(text);
+                return null;
+            }
+        };
+        swingWorker.execute();
+    }
+    public static String openFileOffEDT(String path, FileLoadedListener fileLoadedListener) throws ExecutionException, InterruptedException {
+        SwingWorker openWorker = new SwingWorker() {
+            @Override
+            protected Object doInBackground() {
+                String fileText = openFile(path);
+                return fileText;
+            }
+
+            @Override
+            protected void done() {
+                fileLoadedListener.fileLoaded(this);
+            }
+        };
+        openWorker.execute();
+
+        return (String) openWorker.get();
     }
 }

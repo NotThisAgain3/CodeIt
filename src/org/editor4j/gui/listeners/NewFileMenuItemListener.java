@@ -9,8 +9,9 @@ import javax.swing.filechooser.FileSystemView;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
+import java.util.concurrent.ExecutionException;
 
- public class NewFileMenuItemListener implements ActionListener {
+public class NewFileMenuItemListener implements ActionListener {
     public Editor editor;
     public NewFileMenuItemListener(Editor e){
         this.editor = e;
@@ -22,18 +23,27 @@ import java.io.IOException;
         jFileChooser.setDialogTitle("New");
         int returnValue = jFileChooser.showDialog(editor.jFrame, "Create File");
         if (returnValue == JFileChooser.APPROVE_OPTION) {
+            editor.setCodeEditorAsContentPane();
             try {
                 boolean isNewFileCreated = jFileChooser.getSelectedFile().createNewFile();
                 if(isNewFileCreated){
                     FileManager.openedFile = jFileChooser.getSelectedFile();
-                    editor.openInEditor(UIUtils.getFileExtension(FileManager.openedFile), FileManager.openFile(FileManager.openedFile.getPath()));
-                    editor.setCodeEditorAsContentPane();
+                    FileManager.openFileOffEDT(FileManager.openedFile.getPath(), s -> {
+                        try {
+                            editor.openInEditor(UIUtils.getFileExtension(FileManager.openedFile), (String) s.get());
+                        } catch (InterruptedException | ExecutionException e) {
+                            e.printStackTrace();
+                        }
+                    });
+
 
                 }
                 else {
-                    JOptionPane.showMessageDialog(editor.jFrame, "Failed to create file " + jFileChooser.getSelectedFile());
+                    //WIP, more descriptive error messages
+                    String fileCreationErrorMsg = "Failed to create " + jFileChooser.getSelectedFile() + " because another file with that same name already exists";
+                    JOptionPane.showMessageDialog(editor.jFrame, fileCreationErrorMsg);
                 }
-            } catch (IOException e) {
+            } catch (IOException | ExecutionException | InterruptedException e) {
                 e.printStackTrace();
             }
         }
