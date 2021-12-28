@@ -15,7 +15,8 @@ public class FindReplaceDialog extends JBaseDialog {
 
     JTextField textToFind = new JTextField();
     JTextField replacementText = new JTextField();
-    JField replacementTextField = new JField("Replace With", replacementText);
+
+    JField replacementTextJField = new JField("Replace With", replacementText);
 
     JPanel textFieldsPanel = new JPanel();
 
@@ -31,6 +32,9 @@ public class FindReplaceDialog extends JBaseDialog {
 
         jPanel.setLayout(new BoxLayout(jPanel, BoxLayout.Y_AXIS));
 
+        textToFind.setColumns(10);
+        replacementText.setColumns(10);
+
         textFieldsPanel.setLayout(new BoxLayout(textFieldsPanel, BoxLayout.Y_AXIS));
         textFieldsPanel.add(new JField("Find", textToFind));
 
@@ -39,11 +43,11 @@ public class FindReplaceDialog extends JBaseDialog {
 
         doFindAndReplace.addActionListener(e -> {
             if(doFindAndReplace.isSelected()) {
-                textFieldsPanel.add(replacementTextField);
+                textFieldsPanel.add(replacementTextJField);
                 performOperation.setText("Replace");
             }
             else {
-                textFieldsPanel.remove(replacementTextField);
+                textFieldsPanel.remove(replacementTextJField);
                 performOperation.setText("Find");
             }
 
@@ -92,15 +96,7 @@ public class FindReplaceDialog extends JBaseDialog {
 
         });
 
-
-
         super.setDefaultButtonOnly(performOperation);
         super.setContent(jPanel);
-
-
     }
-
-
-
-
 }
