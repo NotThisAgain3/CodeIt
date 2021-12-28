@@ -1,6 +1,6 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
-- Developer Mode, add a dashboard which shows developer options, enabled in Settings
+- Line wrap is not really line wrap its word wrap
 - Lower Settings Dialog loading time (maybe due to JFontBox)
-- Line wrap is not really line wrap it's word wrap
+
