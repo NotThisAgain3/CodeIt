@@ -6,6 +6,6 @@ import java.io.Serializable;
 public class Settings implements Serializable {
     public Style style;
     public Font font;
-    public boolean lineWrapEnabled;
+    public boolean wordWrapEnabled;
     public int tabSize;
 }

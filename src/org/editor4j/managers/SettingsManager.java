@@ -17,7 +17,7 @@ public class SettingsManager {
             STARTUP_DEFAULT_SETTINGS = new Settings();
             STARTUP_DEFAULT_SETTINGS.style = new LightStyle();
             STARTUP_DEFAULT_SETTINGS.font = new Font("JetBrains Mono Regular", Font.PLAIN, 20);
-            STARTUP_DEFAULT_SETTINGS.lineWrapEnabled = false;
+            STARTUP_DEFAULT_SETTINGS.wordWrapEnabled = false;
             STARTUP_DEFAULT_SETTINGS.tabSize = 4;
         } catch (IOException e) {
             e.printStackTrace();

@@ -21,11 +21,17 @@ import static org.editor4j.managers.SettingsManager.currentSettings;
 public class SettingsDialog extends JBaseDialog {
 
     public JButton apply = new JButton("Apply");
-    JComboBox<Style> styles = new JComboBox<>();
-    JFontBox fonts = new JFontBox(15, Font.PLAIN, GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts());
-    JSpinner fontSizes = new JSpinner(new SpinnerNumberModel(20, 10, 50, 1));
+
     JSpinner tabSizes = new JSpinner(new SpinnerNumberModel(4, 2, 10, 1));
-    JCheckBox lineWrap = new JCheckBox();
+    JCheckBox wordWrap = new JCheckBox();
+
+
+    JComboBox<Style> styles = new JComboBox<>();
+
+    JFontBox fonts = new JFontBox(15, Font.PLAIN, GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames());
+    JSpinner fontSizes = new JSpinner(new SpinnerNumberModel(20, 10, 50, 1));
+
+
     JPanel jPanel = new JPanel();
 
     
@@ -58,7 +64,10 @@ public class SettingsDialog extends JBaseDialog {
     private JPanel buildGeneralOptions() {
         JPanel jPanel = new JPanel();
         jPanel.add(new JField("Tab Size", tabSizes));
-        jPanel.add(new JField("Enable Line Wrapping", lineWrap));
+        jPanel.add(new JField("Enable Word Wrapping", wordWrap));
+
+
+
         return jPanel;
     }
 
@@ -90,11 +99,10 @@ public class SettingsDialog extends JBaseDialog {
     }
 
     private void setSettings(Settings currentSettings) {
-
         styles.getModel().setSelectedItem(currentSettings.style);
         fonts.getModel().setSelectedItem(currentSettings.font.getFontName());
         fontSizes.setValue(currentSettings.font.getSize());
-        lineWrap.setSelected(currentSettings.lineWrapEnabled);
+        wordWrap.setSelected(currentSettings.wordWrapEnabled);
         tabSizes.setValue(currentSettings.tabSize);
     }
 
@@ -110,7 +118,7 @@ public class SettingsDialog extends JBaseDialog {
         String fontName = (String) fonts.getSelectedItem();
 
         settings.font = new Font(fontName, Font.PLAIN, fontSize);
-        settings.lineWrapEnabled = lineWrap.isSelected();
+        settings.wordWrapEnabled = wordWrap.isSelected();
         settings.tabSize = (int) tabSizes.getValue();
         return settings;
     }

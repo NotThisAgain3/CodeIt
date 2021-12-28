@@ -28,7 +28,9 @@ public class Editor implements EditorSignals {
     public JMenuItem newFileMenuItem, openFileMenuItem, saveFileMenuItem;
     public JMenuItem findSlashReplace;
     public JMenuItem settingsMenuItem;
+
     public SaveIndicator saveIndicator;
+
     public void createNewEditor() {
         //Workaround, codeEditorScrollPane isn't attached on startup, so it doesn't
         //get the new LaF
@@ -125,6 +127,8 @@ public class Editor implements EditorSignals {
             e.printStackTrace();
         }
         codeEditor.setTabSize(s.tabSize);
-        codeEditor.setLineWrap(s.lineWrapEnabled);
+        codeEditor.setLineWrap(s.wordWrapEnabled);
     }
+
+
 }
