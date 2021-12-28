@@ -1,6 +1,6 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
-- Line wrap is not really line wrap its word wrap
+- Remove git-time branch on remote repo
 - Lower Settings Dialog loading time (maybe due to JFontBox)
 
