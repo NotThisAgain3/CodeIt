@@ -20,9 +20,12 @@ import static org.editor4j.gui.UIUtils.osMenuMask;
 
 public class Editor implements EditorSignals {
 
+    public static final String version = "2022.1";
+
     public RSyntaxTextArea codeEditor;
     public RTextScrollPane codeEditorScrollPane;
-    public JFrame jFrame = new JFrame("Editor4J");
+    public JFrame jFrame = new JFrame("Editor4J " + version);
+
     public JMenuBar jMenuBar;
     public JMenu fileMenu, editorMenu, editMenu;
     public JMenuItem newFileMenuItem, openFileMenuItem, saveFileMenuItem;
@@ -107,7 +110,7 @@ public class Editor implements EditorSignals {
     @Override
     public void openInEditor(String fileExtension, String text) {
         codeEditor.setText(text);
-        jFrame.setTitle(UIUtils.formatTitleBar(FileManager.openedFile.getPath()));
+        jFrame.setTitle(UIUtils.formatTitleBar(version, FileManager.openedFile.getPath()));
         codeEditor.setSyntaxEditingStyle(UIUtils.getSyntaxEditingStyle(fileExtension));
     }
 

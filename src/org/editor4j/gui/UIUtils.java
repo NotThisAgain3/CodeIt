@@ -1,7 +1,6 @@
 package org.editor4j.gui;
 
 
-import org.fife.ui.rsyntaxtextarea.RSyntaxTextArea;
 import org.fife.ui.rtextarea.Gutter;
 
 import javax.swing.*;
@@ -21,8 +20,8 @@ public class UIUtils {
             e.printStackTrace();
         }
     }
-    public static String formatTitleBar(String text){
-        return "Editor4J - " + text;
+    public static String formatTitleBar(String version, String fileName){
+        return "Editor4J " + version + " - " + fileName;
     }
     public static String getFileExtension(File f){
         String[] tokens = f.getName().split("\\.");
