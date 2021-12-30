@@ -1,7 +1,5 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
-- Polish Dialogs in General
-- Lower Settings Dialog loading time (maybe due to JFontBox)
-- Design Logo
-
+- Commit new versioning system
+- Design logo
