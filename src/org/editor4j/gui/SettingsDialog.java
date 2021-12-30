@@ -28,7 +28,7 @@ public class SettingsDialog extends JBaseDialog {
 
     JComboBox<Style> styles = new JComboBox<>();
 
-    JFontBox fonts = new JFontBox(15, Font.PLAIN, GraphicsEnvironment.getLocalGraphicsEnvironment().getAvailableFontFamilyNames());
+    JFontBox fonts = new JFontBox(15, Font.PLAIN, GraphicsEnvironment.getLocalGraphicsEnvironment().getAllFonts());
     JSpinner fontSizes = new JSpinner(new SpinnerNumberModel(20, 10, 50, 1));
 
 
