@@ -1,13 +1,20 @@
 plugins {
     id 'java'
+    id 'application'
 }
 
-group 'org.example'
-version '1.0-SNAPSHOT'
+apply plugin : "java"
+
+group 'org.editor4j'
 
 repositories {
     mavenCentral()
 }
+
+application {
+    mainClassName = "org.editor4j.Main"
+}
+
 sourceSets {
     main {
         java {
@@ -16,6 +23,6 @@ sourceSets {
     }
 }
 dependencies {
-    implementation 'com.formdev:flatlaf:1.6.1'
-    implementation 'com.fifesoft:rsyntaxtextarea:3.1.3'
+    implementation 'com.formdev:flatlaf:1.6.5'
+    implementation 'com.fifesoft:rsyntaxtextarea:3.1.4'
 }
