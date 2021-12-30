@@ -1,4 +1,5 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
-- Design logo
+- Design logo (Maybe next release, no logo looks even halfway good)
+- Release!
