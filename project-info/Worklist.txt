@@ -1,5 +1,4 @@
 Almost ready for first release! :)
 A few more things before Editor4J 1.0 rolls out:
 
-- Commit new versioning system
 - Design logo
