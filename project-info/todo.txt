@@ -1,0 +1,10 @@
+- Change version to 2022.2
+
+
+- Maintenance Mode, Editor needs refactoring along with FindReplaceBar, and a lot of cleanup
+- Embedded Find/Find And Replace Bar (polishing, FindReplaceBar will prob need another rewrite)
+
+New features in 2022.2:
+- Support for editing multiple files
+- A new theme for RSyntaxTextArea, (TrueDark?)
+
