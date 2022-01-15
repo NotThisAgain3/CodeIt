@@ -1,54 +1,48 @@
 package org.editor4j.gui;
 
 import org.editor4j.Editor;
-import org.editor4j.gui.components.JBaseDialog;
 import org.editor4j.gui.components.JField;
+import org.editor4j.gui.components.ToolBar;
 import org.fife.ui.rtextarea.SearchContext;
 import org.fife.ui.rtextarea.SearchEngine;
 
 import javax.swing.*;
 import java.awt.*;
 
-public class FindReplaceDialog extends JBaseDialog {
-    JPanel jPanel = new JPanel();
+public class FindReplaceBar extends ToolBar {
+    JTextField findTextField = new JTextField();
+    JTextField replaceTextField = new JTextField();
 
-
-    JTextField textToFind = new JTextField();
-    JTextField replacementText = new JTextField();
-
-    JField replacementTextJField = new JField("Replace With", replacementText);
+    JField replacementTextJField = new JField("Replace With", replaceTextField);
 
     JPanel textFieldsPanel = new JPanel();
 
-    JCheckBox doFindAndReplace = new JCheckBox();
-    JButton performOperation = new JButton("Find");
+    JCheckBox findAndReplace = new JCheckBox();
+    JButton button = new JButton("Find");
 
-    JRadioButton searchBackward = new JRadioButton(), searchForward = new JRadioButton();
+    JRadioButton searchUp = new JRadioButton(), searchDown = new JRadioButton();
     JCheckBox matchCase = new JCheckBox();
 
+    public FindReplaceBar(Editor editor) {
+        super(editor);
 
-    public FindReplaceDialog(Editor editor) {
-        super("Find/Replace", 320, 240);
+        findTextField.setColumns(10);
+        replaceTextField.setColumns(10);
 
-        jPanel.setLayout(new BoxLayout(jPanel, BoxLayout.Y_AXIS));
-
-        textToFind.setColumns(10);
-        replacementText.setColumns(10);
-
-        textFieldsPanel.setLayout(new BoxLayout(textFieldsPanel, BoxLayout.Y_AXIS));
-        textFieldsPanel.add(new JField("Find", textToFind));
+        textFieldsPanel.setLayout(new FlowLayout());
+        textFieldsPanel.add(new JField("Find", findTextField));
 
 
-        jPanel.add(textFieldsPanel);
 
-        doFindAndReplace.addActionListener(e -> {
-            if(doFindAndReplace.isSelected()) {
+        findAndReplace.addActionListener(e -> {
+            if(findAndReplace.isSelected()) {
                 textFieldsPanel.add(replacementTextJField);
-                performOperation.setText("Replace");
+                SwingUtilities.updateComponentTreeUI(replacementTextJField);
+                button.setText("Replace");
             }
             else {
                 textFieldsPanel.remove(replacementTextJField);
-                performOperation.setText("Find");
+                button.setText("Find");
             }
 
             textFieldsPanel.revalidate();
@@ -57,46 +51,41 @@ public class FindReplaceDialog extends JBaseDialog {
         });
 
         //Set up options
+        JPanel searchOptions = new JPanel();
+        searchOptions.setLayout(new FlowLayout());
+        searchOptions.add(new JField("Find And Replace", findAndReplace));
 
-        JPanel optionsPanel = new JPanel();
-        optionsPanel.setLayout(new FlowLayout());
-        optionsPanel.add(new JField("Find And Replace", doFindAndReplace));
-        ButtonGroup buttonGroup = new ButtonGroup();
-        buttonGroup.add(searchBackward);
-        buttonGroup.add(searchForward);
-        optionsPanel.add(new JField("Backward (Up)", searchBackward));
-        optionsPanel.add(new JField("Forward (Down)", searchForward));
-        optionsPanel.add(new JField("Match Case", matchCase));
+        ButtonGroup upOrDown = new ButtonGroup();
+        upOrDown.add(searchUp);
+        upOrDown.add(searchDown);
 
-        jPanel.add(optionsPanel);
-        setModalityType(ModalityType.APPLICATION_MODAL);
+        searchOptions.add(new JField("Up", searchUp));
+        searchOptions.add(new JField("Down", searchDown));
+        searchOptions.add(new JField("Match Case", matchCase));
 
 
-
-
-        performOperation.addActionListener(e -> {
-
-            boolean doingFindAndReplace = doFindAndReplace.isSelected();
-
+        button.addActionListener(e -> {
             SearchContext searchContext = new SearchContext();
 
-            searchContext.setSearchFor(textToFind.getText());
+            searchContext.setSearchFor(findTextField.getText());
             searchContext.setMatchCase(matchCase.isSelected());
-            searchContext.setSearchForward(searchForward.isSelected());
+            searchContext.setSearchForward(searchDown.isSelected());
             searchContext.setWholeWord(false);
 
 
-            if(doingFindAndReplace)
-                searchContext.setReplaceWith(replacementText.getText());
-
-            if(doingFindAndReplace)
+            if(findAndReplace.isSelected()) {
+                searchContext.setReplaceWith(replaceTextField.getText());
                 SearchEngine.replace(editor.codeEditor, searchContext);
+            }
             else
                 SearchEngine.find(editor.codeEditor, searchContext).wasFound();
 
         });
 
-        super.setDefaultButtonOnly(performOperation);
-        super.setContent(jPanel);
+        addBarComponent(textFieldsPanel);
+        addBarComponent(searchOptions);
+        addBarComponent(button);
     }
+
+
 }
