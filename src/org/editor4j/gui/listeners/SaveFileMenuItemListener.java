@@ -1,6 +1,6 @@
 package org.editor4j.gui.listeners;
 
-import org.editor4j.Editor;
+import org.editor4j.App;
 import org.editor4j.managers.FileManager;
 import org.editor4j.managers.SavedManager;
 
@@ -8,18 +8,18 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class SaveFileMenuItemListener implements ActionListener {
-    private final Editor editor;
-    public SaveFileMenuItemListener(Editor e){
-        editor = e;
+    private final App app;
+    public SaveFileMenuItemListener(App e){
+        app = e;
     }
     @Override
     public void actionPerformed(ActionEvent actionEvent) {
         if(FileManager.openedFile != null){
-            String newText = editor.codeEditor.getText();
+            String newText = app.codeEditor.getText();
             FileManager.saveTextToOpenFileOffEDT(newText);
 
             SavedManager.saved = true;
-            editor.updateSavedStatus(SavedManager.saved);
+            app.updateSavedStatus(SavedManager.saved);
         }
     }
 }

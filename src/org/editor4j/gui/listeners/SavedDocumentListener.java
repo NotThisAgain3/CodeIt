@@ -1,16 +1,16 @@
 package org.editor4j.gui.listeners;
 
-import org.editor4j.Editor;
+import org.editor4j.App;
 import org.editor4j.managers.SavedManager;
 
 import javax.swing.event.DocumentEvent;
 import javax.swing.event.DocumentListener;
 
 public class SavedDocumentListener implements DocumentListener {
-    private final Editor editor;
+    private final App app;
 
-    public SavedDocumentListener(Editor editor) {
-        this.editor = editor;
+    public SavedDocumentListener(App app) {
+        this.app = app;
     }
 
     @Override
@@ -26,6 +26,6 @@ public class SavedDocumentListener implements DocumentListener {
     @Override
     public void changedUpdate(DocumentEvent e) {
         SavedManager.saved = false;
-        editor.updateSavedStatus(SavedManager.saved);
+        app.updateSavedStatus(SavedManager.saved);
     }
 }

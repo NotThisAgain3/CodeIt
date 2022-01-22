@@ -1,6 +1,6 @@
 package org.editor4j.gui.listeners;
 
-import org.editor4j.Editor;
+import org.editor4j.App;
 import org.editor4j.gui.SettingsDialog;
 import org.editor4j.managers.SettingsManager;
 import org.editor4j.models.Settings;
@@ -11,10 +11,10 @@ import java.io.IOException;
 
 public class SettingsMenuItemListener implements ActionListener {
 
-    private final Editor editor;
+    private final App app;
 
-    public SettingsMenuItemListener(Editor e){
-        editor = e;
+    public SettingsMenuItemListener(App e){
+        app = e;
     }
 
     @Override
@@ -27,7 +27,7 @@ public class SettingsMenuItemListener implements ActionListener {
                 Settings chosenSettings = settingsDialog.getSettings();
                 SettingsManager.currentSettings = chosenSettings;
                 SettingsManager.saveSettingsToFile(chosenSettings);
-                editor.applySettings(chosenSettings);
+                app.applySettings(chosenSettings);
 
             } catch (IOException e) {
                 e.printStackTrace();

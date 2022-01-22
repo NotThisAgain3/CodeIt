@@ -1,29 +1,29 @@
 package org.editor4j.gui.listeners;
 
-import org.editor4j.Editor;
+import org.editor4j.App;
 import org.editor4j.gui.FindReplaceBar;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class FindReplaceMenuItemListener implements ActionListener {
-    private final Editor editor;
+    private final App app;
     FindReplaceBar findReplaceBar;
 
-    public FindReplaceMenuItemListener(Editor e) {
-        this.editor = e;
-        findReplaceBar = new FindReplaceBar(editor);
+    public FindReplaceMenuItemListener(App e) {
+        this.app = e;
+        findReplaceBar = new FindReplaceBar(app);
     }
 
 
     @Override
     public void actionPerformed(ActionEvent e) {
         if(!findReplaceBar.visible) {
-            editor.addToolBar(findReplaceBar);
+            app.addToolBar(findReplaceBar);
             findReplaceBar.visible = true;
         }
         else {
-            editor.removeToolBar(findReplaceBar);
+            app.removeToolBar(findReplaceBar);
             findReplaceBar.visible = false;
         }
     }
