@@ -7,13 +7,12 @@ import java.awt.*;
 
 public abstract class ToolBar extends JPanel {
 
-    public boolean visible = true;
+    public boolean visible = false;
     BorderLayout baseBorderLayout = new BorderLayout();
     JButton closeBar = new JButton();
     JPanel barContent = new JPanel();
     public ToolBar(Editor editor){
         super();
-
 
         setLayout(baseBorderLayout);
 
