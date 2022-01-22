@@ -16,7 +16,7 @@ public class SaveFileMenuItemListener implements ActionListener {
     public void actionPerformed(ActionEvent actionEvent) {
         if(FileManager.openedFile != null){
             String newText = editor.codeEditor.getText();
-            FileManager.saveTextToOpenFile(newText);
+            FileManager.saveTextToOpenFileOffEDT(newText);
 
             SavedManager.saved = true;
             editor.updateSavedStatus(SavedManager.saved);
