@@ -20,7 +20,7 @@ import java.io.IOException;
 
 import static org.editor4j.gui.UIUtils.osMenuMask;
 
-public class Editor implements EditorSignals {
+public class App implements UISignals {
 
     public static final String version = "2022.2";
 

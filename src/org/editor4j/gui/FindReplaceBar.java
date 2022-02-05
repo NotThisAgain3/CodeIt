@@ -1,6 +1,6 @@
 package org.editor4j.gui;
 
-import org.editor4j.Editor;
+import org.editor4j.App;
 import org.editor4j.gui.components.JField;
 import org.editor4j.gui.components.ToolBar;
 import org.fife.ui.rtextarea.SearchContext;
@@ -23,8 +23,8 @@ public class FindReplaceBar extends ToolBar {
     JRadioButton searchUp = new JRadioButton(), searchDown = new JRadioButton();
     JCheckBox matchCase = new JCheckBox();
 
-    public FindReplaceBar(Editor editor) {
-        super(editor);
+    public FindReplaceBar(App app) {
+        super(app);
 
         findTextField.setColumns(10);
         replaceTextField.setColumns(10);
@@ -75,10 +75,10 @@ public class FindReplaceBar extends ToolBar {
 
             if(findAndReplace.isSelected()) {
                 searchContext.setReplaceWith(replaceTextField.getText());
-                SearchEngine.replace(editor.codeEditor, searchContext);
+                SearchEngine.replace(app.codeEditor, searchContext);
             }
             else
-                SearchEngine.find(editor.codeEditor, searchContext).wasFound();
+                SearchEngine.find(app.codeEditor, searchContext).wasFound();
 
         });
 

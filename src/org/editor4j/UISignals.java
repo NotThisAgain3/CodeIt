@@ -5,7 +5,7 @@ import org.editor4j.models.Settings;
 
 import javax.swing.*;
 
-public interface EditorSignals {
+public interface UISignals {
     void setCodeEditorAsContentPane();
     void openInEditor(String fileExtension, String text);
     void updateSavedStatus(boolean saved);

@@ -1,6 +1,6 @@
 package org.editor4j.gui.components;
 
-import org.editor4j.Editor;
+import org.editor4j.App;
 
 import javax.swing.*;
 import java.awt.*;
@@ -11,7 +11,7 @@ public abstract class ToolBar extends JPanel {
     BorderLayout baseBorderLayout = new BorderLayout();
     JButton closeBar = new JButton();
     JPanel barContent = new JPanel();
-    public ToolBar(Editor editor){
+    public ToolBar(App app){
         super();
 
         setLayout(baseBorderLayout);
@@ -21,7 +21,7 @@ public abstract class ToolBar extends JPanel {
         closeBar.setIcon(new ImageIcon("assets/x.png"));
         closeBar.setContentAreaFilled(false);
         closeBar.addActionListener(e -> {
-            editor.removeToolBar(this);
+            app.removeToolBar(this);
             visible = false;
         });
 
