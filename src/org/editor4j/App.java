@@ -28,7 +28,7 @@ public class App implements UISignals {
     public JPanel toolBars = new JPanel();
     public RSyntaxTextArea codeEditor;
     public RTextScrollPane codeEditorScrollPane;
-    public JFrame jFrame = new JFrame("Editor4J " + version);
+    public JFrame jFrame = new JFrame("CodeIt " + version);
 
     public JMenuBar jMenuBar;
     public JMenu fileMenu, editorMenu, editMenu;

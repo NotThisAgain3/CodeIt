@@ -21,7 +21,7 @@ public class UIUtils {
         }
     }
     public static String formatTitleBar(String version, String fileName){
-        return "Editor4J " + version + " - " + fileName;
+        return "CodeIt " + version + " - " + fileName;
     }
     public static String getFileExtension(File f){
         String[] tokens = f.getName().split("\\.");
